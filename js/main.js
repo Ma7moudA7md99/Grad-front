@@ -1,32 +1,25 @@
 // navbar functions
 const navbar = document.querySelector(".navbar");
 const fly_btn = document.getElementById("flying-btn");
-const Large_Tablets = window.matchMedia("(max-width: 1024px)");
-const Tablet = window.matchMedia("(max-width: 768px)");
 const mobile_icon = document.getElementById("mobile-icon");
 const mobile_menu = document.getElementById("right");
 
-if (window.innerWidth <= 1024) {
-  fly_btn.style.animation = "rotation-show 2s alternate";
-  fly_btn.style.right = "10%";
-} else {
-  // show/hide sign-in menu on click of the button
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 0) {
-      navbar.classList.add("set-shadow");
-      fly_btn.style.animation = "rotation-show 2s alternate";
-      fly_btn.style.right = "10%";
-    }
-    if (window.scrollY < 1) {
-      fly_btn.style.animation = "rotation-hide 2s alternate";
-      fly_btn.style.right = "-10%";
+// show/hide sign-in menu on click of the button
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 0) {
+    navbar.classList.add("set-shadow");
+    fly_btn.style.animation = "rotation-show 2s alternate";
+    fly_btn.style.right = "10%";
+  }
+  if (window.scrollY < 1) {
+    fly_btn.style.animation = "rotation-hide 2s alternate";
+    fly_btn.style.right = "-10%";
 
-      if (window.scrollY === 0) {
-        navbar.classList.remove("set-shadow");
-      }
+    if (window.scrollY === 0) {
+      navbar.classList.remove("set-shadow");
     }
-  });
-}
+  }
+});
 // show / hide menu bar in mobile < 768px size
 mobile_icon.onclick = function () {
   if (

@@ -33,7 +33,7 @@
 }
 /*  */
 body {
-  background-color: white;
+  position: relative;
   margin: 0;
   padding: 0;
   font-family: "Roboto Mono", monospace;
@@ -180,9 +180,6 @@ footer .social-media span.rights {
   .container {
     margin: 0 30px;
   }
-  header {
-    position: fixed;
-  }
   header .mobile-icon {
     display: block;
     position: absolute;
@@ -227,6 +224,15 @@ footer .social-media span.rights {
   }
 }
 @media (max-width: 425px) {
+  header {
+    width: 100%;
+  }
+  header .mobile-icon {
+    right: 15%;
+  }
+  header .right {
+    right: 10%;
+  }
   footer {
     height: 100%;
   }
