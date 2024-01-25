@@ -22,7 +22,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <title>Medical Care</title>
   </head>
-  <body class="body">
+  <body id="body">
     <header
       class="navbar"
       data-aos="fade-down"
@@ -49,25 +49,50 @@
         </div>
       </div>
     </header>
-    <a id="flying-btn" href="" title="Sign In"
+    <span id="flying-btn" href="" title="Sign In"
       ><i class="fa-solid fa-user-plus"></i
-    ></a>
+    ></span>
+    <div class="overlay" id="overlay"></div>
     <div class="sign-in" id="sign-in">
+      <div class="exit-icon" id="exit-icon">
+        <i class="fa-solid fa-x"></i>
+      </div>
       <div class="container">
-        <div class="left">
+        <div
+          class="left"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <img src="image/logo.png" alt="" />
         </div>
-        <div class="right">
+        <div
+          class="right"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <form action="">
-            <input type="email" name="" id="" placeholder="E-Mail" />
-            <input type="password" name="" id="" placeholder="Password" />
+            <input
+              type="email"
+              name=""
+              id="email"
+              placeholder="Email"
+              autocomplete="@gmail.com"
+            />
+            <input
+              type="password"
+              name=""
+              id="password"
+              placeholder="Password"
+            />
             <button type="submit">Sign In</button>
           </form>
           <span>Don't have an account? <a href="#">Sign Up</a></span>
         </div>
       </div>
     </div>
-    <section class="intro" id="intro">
+    <div class="intro" id="intro">
       <div
         class="container aos-init"
         data-aos="zoom-in"
@@ -88,7 +113,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
     <section class="home" id="home">
       <div class="container">
         <div class="word">
@@ -105,13 +130,85 @@
           <div class="content">
             <strong>Our Mission</strong>
             <p>
-              Is to provid to you the treatment and stay with until you recover
+              Is to provide to you the treatment and stay with until you recover
               your health 100%
             </p>
           </div>
           <div class="content">
             <strong>Professionals in our Clinic</strong>
             <p>Has provided a high class facility for the treatment</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services" id="services">
+      <div class="container">
+        <div class="word">
+          <h1>Services</h1>
+        </div>
+        <div class="card">
+          <div class="img"><img src="image/skincancer.jpg" alt="" /></div>
+          <div class="text">
+            <h2>Skin Cancer</h2>
+            <p>
+              Here we provide the service of reading medical tests to find out
+              whether you suffer from a certain disease or not
+            </p>
+            <div class="service-link">
+              <a href="">Go To <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img"><img src="image/diabetes.jpg" alt="" /></div>
+          <div class="text">
+            <h2>Diabetes</h2>
+            <p>
+              Here we provide the service of reading medical tests to find out
+              whether you suffer from a certain disease or not
+            </p>
+            <div class="service-link">
+              <a href="">Go To <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img"><img src="image/lungcancer.jpg" alt="" /></div>
+          <div class="text">
+            <h2>Lung Cancer</h2>
+            <p>
+              Here we provide the service of reading medical tests to find out
+              whether you suffer from a certain disease or not
+            </p>
+            <div class="service-link">
+              <a href="">Go To <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img"><img src="image/virusc.jpg" alt="" /></div>
+          <div class="text">
+            <h2>Virus C</h2>
+            <p>
+              Here we provide the service of reading medical tests to find out
+              whether you suffer from a certain disease or not
+            </p>
+            <div class="service-link">
+              <a href="">Go To <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img"><img src="image/terminology.jpg" alt="" /></div>
+          <div class="text">
+            <h2>Medical Terminology</h2>
+            <p>
+              Here we provide the service of explaining medical terminology for
+              you
+            </p>
+            <div class="service-link term">
+              <a href="">Go To <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
           </div>
         </div>
       </div>

@@ -1,13 +1,14 @@
 :root {
   --main-color: #0086c4;
   --p-text-color: #777;
-  --shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+  --shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
   --gradient--color: linear-gradient(
     180deg,
     rgba(0, 134, 196, 1) 18%,
     rgba(0, 0, 0, 1) 50%,
     rgba(0, 134, 196, 1) 84%
   );
+  --section-padding: 75px 0;
 }
 /* scrollbar */
 /* Customize scrollbar for Webkit-based browsers */
@@ -58,7 +59,7 @@ header {
   height: 80px;
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 9;
   --webkit-backface-visibility: hidden;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
   transition: box-shadow 0.5s ease-in-out;
@@ -111,7 +112,7 @@ header .mobile-icon {
   padding: 20px;
   border-radius: 50%;
   color: white;
-  transition: 2s right;
+  transition: 2s right display;
 }
 #flying-btn:hover {
   color: var(--main-color);
