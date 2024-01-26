@@ -55,15 +55,13 @@ a {
   transform: scale(1.2) translateY(1px);
 }
 header {
-  background-color: white;
-  height: 80px;
   position: fixed;
-  top: 0;
-  z-index: 9;
-  --webkit-backface-visibility: hidden;
-  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
-  transition: box-shadow 0.5s ease-in-out;
+  height: 80px;
   width: 100%;
+  top: 0;
+  background-color: white;
+  transition: box-shadow 0.5s ease-in-out;
+  z-index: 3;
 }
 .set-shadow {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
@@ -96,11 +94,11 @@ header .mobile-icon {
   display: none;
 }
 /* flying btn */
-#flying-btn {
+span#flying-btn {
   z-index: 3;
   width: fit-content;
   position: fixed;
-  right: -5%;
+  right: 10%;
   bottom: 100px;
   background: radial-gradient(
     circle,
@@ -112,9 +110,9 @@ header .mobile-icon {
   padding: 20px;
   border-radius: 50%;
   color: white;
-  transition: 2s right display;
+  transition: 2s right ease-in-out;
 }
-#flying-btn:hover {
+span#flying-btn:hover {
   color: var(--main-color);
   background: white;
   border: 1px solid var(--main-color);
@@ -122,6 +120,7 @@ header .mobile-icon {
 }
 /* start footer */
 footer {
+  width: 100%;
   height: 75px;
   background-color: var(--main-color);
   color: white;
@@ -173,13 +172,13 @@ footer .social-media span.rights {
   header {
     width: 100%;
   }
-  #flying-btn {
+  span#flying-btn {
     right: 10%;
   }
 }
 @media (max-width: 768px) {
   .container {
-    margin: 0 30px;
+    margin: 0 auto;
   }
   header .mobile-icon {
     display: block;
@@ -224,7 +223,7 @@ footer .social-media span.rights {
     padding: 0;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   header {
     width: 100%;
   }
@@ -246,6 +245,18 @@ footer .social-media span.rights {
   }
   footer .logo img {
     transform: translateY(0);
+  }
+}
+@media (max-width: 376px) {
+  .container {
+    width: 95%;
+    margin: 0 10px;
+  }
+  header .container {
+    width: 100%;
+  }
+  header .mobile-icon {
+    right: 6%;
   }
 }
 /* responsive */

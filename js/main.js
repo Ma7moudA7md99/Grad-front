@@ -48,7 +48,7 @@ mobile_icon.onclick = function () {
 };
 // show / hide sign in div
 fly_btn.onclick = function () {
-  if (sign_in.style.left === "-100%") {
+  if (sign_in.style.left === "-100%" || sign_in.style.left === "") {
     sign_in.style.left = "10%";
     overlay.style.left = "0";
     fly_btn.style.display = "none";
@@ -99,9 +99,11 @@ document.addEventListener("DOMContentLoaded", function () {
 for (let i = 0; i < cards.length; i++) {
   setTimeout(() => {
     cards[i].addEventListener("mouseover", () => {
+      cardLinks[i].style.visibility = "visible";
       cardLinks[i].style.opacity = "1";
     });
     cards[i].addEventListener("mouseout", () => {
+      cardLinks[i].style.visibility = "hidden";
       cardLinks[i].style.opacity = "0";
     });
   }, 1600);
