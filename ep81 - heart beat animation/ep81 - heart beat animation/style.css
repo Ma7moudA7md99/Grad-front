@@ -1,0 +1,40 @@
+/*  Pulse Animation */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+body {
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 100px;
+}
+
+.iconSVGPulse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+  width: 100%;
+}
+
+.iconSVGPulse .path-pulse {
+  stroke-dasharray: 6423;
+  animation: dashPathPulse 5s linear infinite;
+}
+
+@keyframes dashPathPulse {
+  0% {
+    stroke-dashoffset: 12423;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
