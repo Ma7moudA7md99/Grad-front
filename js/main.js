@@ -25,13 +25,6 @@ window.addEventListener("scroll", function () {
     navbar.classList.add("set-shadow");
     fly_btn.style.animation = "rotation-show 2s alternate";
     fly_btn.style.right = "10%";
-  }
-  if (window.innerWidth <= 426) {
-    if (window.scrollY === 0) {
-      navbar.classList.remove("set-shadow");
-      fly_btn.style.animation = "rotation-hide 2s alternate";
-      fly_btn.style.right = "-10%";
-    }
   } else {
     fly_btn.style.animation = "rotation-hide 2s alternate";
     fly_btn.style.right = "-10%";

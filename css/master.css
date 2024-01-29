@@ -98,7 +98,7 @@ span#flying-btn {
   z-index: 3;
   width: fit-content;
   position: fixed;
-  right: 10%;
+  right: -10%;
   bottom: 100px;
   background: radial-gradient(
     circle,
