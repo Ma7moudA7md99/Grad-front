@@ -1,0 +1,79 @@
+/* global  */
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* global  */
+section.describe {
+  padding: 100px 0;
+}
+.describe .container {
+  align-items: center;
+  flex-direction: column;
+}
+.describe .img {
+  margin: 40px 0;
+  width: 900px;
+}
+.describe .img img {
+  box-shadow: var(--shadow);
+  filter: grayscale(1);
+  transition: 1s ease;
+}
+.describe .img img:hover {
+  filter: none;
+}
+
+.describe .text .title {
+  font-size: 40px;
+}
+.describe .text p {
+  color: var(--p-text-color);
+  line-height: 2;
+}
+.describe .text .content {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.describe .text .content .img {
+  margin: 0 30px;
+}
+.describe .text .content .inner-text {
+  margin: auto 0;
+}
+.describe .text .content .info {
+  position: relative;
+}
+/* icon animation */
+.describe .text .content .info .icon {
+  position: absolute;
+  top: -30px;
+}
+.describe .text .content .info .icon svg {
+  width: 60px;
+}
+.describe .text .content .info .icon #dark1,
+.describe .text .content .info .icon #dark2,
+.describe .text .content .info .icon #light {
+  transition: 1s ease;
+}
+.describe .text .content .info .icon #dark2 {
+  transform: translateX(-100%);
+}
+.describe .text .content .info:hover .icon #light {
+  transform: translateX(15%);
+}
+.describe .text .content .info:hover .icon #dark1 {
+  transform: translateX(40%);
+  opacity: 0;
+}
+.describe .text .content .info:hover .icon #dark2 {
+  transform: translateX(0%);
+}
+/* icon animation */
+.describe .text .content strong {
+  font-size: 1.5em;
+  padding-left: 50px;
+}

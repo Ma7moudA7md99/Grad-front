@@ -21,10 +21,17 @@
 }
 .word h1 {
   position: relative;
+  padding: 3px 10px;
+  border: 1px solid var(--main-color);
   font-size: 30px;
   text-transform: uppercase;
   letter-spacing: 10px;
   color: var(--main-color);
+  box-shadow: 0 0 0 rgba(0, 134, 196, 0.4);
+  animation: pulse 1s infinite;
+}
+.word h1:hover {
+  animation: none;
 }
 section {
   position: relative;
@@ -262,20 +269,29 @@ section {
 }
 /* services section */
 /* animations */
-@keyframes word-move-bottom {
+@-webkit-keyframes pulse {
   0% {
-    right: -200%;
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 134, 196, 0.4);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 10px rgba(0, 134, 196, 0);
   }
   100% {
-    right: 100%;
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 134, 196, 0);
   }
 }
-@keyframes word-move-top {
+@keyframes pulse {
   0% {
-    left: -100%;
+    -moz-box-shadow: 0 0 0 0 rgba(0, 134, 196, 0.4);
+    box-shadow: 0 0 0 0 rgba(0, 134, 196, 0.4);
+  }
+  70% {
+    -moz-box-shadow: 0 0 0 10px rgba(0, 134, 196, 0);
+    box-shadow: 0 0 0 10px rgba(0, 134, 196, 0);
   }
   100% {
-    left: 200%;
+    -moz-box-shadow: 0 0 0 0 rgba(0, 134, 196, 0);
+    box-shadow: 0 0 0 0 rgba(0, 134, 196, 0);
   }
 }
 @keyframes card-slider {
@@ -391,6 +407,10 @@ section {
   }
   .services .container .card .text .service-link.term {
     transform: translateY(22%);
+  }
+  .services .container .card .text::before {
+    top: -141px;
+    height: 141px;
   }
 }
 @media (max-width: 376px) {
