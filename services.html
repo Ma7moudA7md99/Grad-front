@@ -225,6 +225,62 @@
         </div> -->
       </div>
     </section>
+    <section class="form-section">
+      <div class="container">
+        <div class="user-input">
+          <form class="analysis" id="analysis">
+            <h1>Enter this information's</h1>
+            <div class="fname">
+              <input
+                type="text"
+                name="fname"
+                id="fname"
+                class="fname"
+                placeholder="First Name"
+                required
+              />
+              <span></span>
+            </div>
+            <div class="lname">
+              <input
+                type="text"
+                name="lname"
+                id="lname"
+                class="lname"
+                placeholder="Last Name"
+                required
+              />
+              <span></span>
+            </div>
+            <div class="age">
+              <input
+                type="number"
+                name="age"
+                id="age"
+                class="age"
+                required
+                placeholder="Age"
+              />
+              <span></span>
+            </div>
+            <div class="img">
+              <label for="uploadImage" class="button">Upload Image</label>
+              <span id="fileLabel" class="uploadLabel"></span>
+              <input
+                type="file"
+                id="uploadImage"
+                accept="image/*"
+                onchange="displayFilename()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="result">
+          <h1>Result</h1>
+          <p>Your result will be here</p>
+        </div>
+      </div>
+    </section>
     <footer>
       <div class="container">
         <div class="logo">
@@ -251,5 +307,6 @@
     </footer>
     <script src="js/all.min.js"></script>
     <script src="js/header.js"></script>
+    <script src="js/services.js"></script>
   </body>
 </html>
