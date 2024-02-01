@@ -12,27 +12,6 @@
   z-index: 4;
   transition: 2s;
 }
-.word {
-  width: fit-content;
-  position: absolute;
-  top: 5%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.word h1 {
-  position: relative;
-  padding: 3px 10px;
-  border: 1px solid var(--main-color);
-  font-size: 30px;
-  text-transform: uppercase;
-  letter-spacing: 10px;
-  color: var(--main-color);
-  box-shadow: 0 0 0 rgba(0, 134, 196, 0.4);
-  animation: pulse 1s infinite;
-}
-.word h1:hover {
-  animation: none;
-}
 section {
   position: relative;
   padding-top: 200px;
