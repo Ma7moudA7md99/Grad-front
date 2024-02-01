@@ -57,6 +57,27 @@ a {
   border-radius: 30px;
   transform: scale(1.2) translateY(1px);
 }
+.word {
+  width: fit-content;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.word h1 {
+  position: relative;
+  padding: 3px 10px;
+  border: 1px solid var(--main-color);
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: var(--main-color);
+  box-shadow: 0 0 0 rgba(0, 134, 196, 0.4);
+  animation: pulse 1s infinite;
+}
+.word h1:hover {
+  animation: none;
+}
 header {
   position: fixed;
   height: 80px;
@@ -67,7 +88,6 @@ header {
   z-index: 3;
   padding: 10px 0;
   align-items: center;
-  /* display: flex; */
 }
 .set-shadow {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
