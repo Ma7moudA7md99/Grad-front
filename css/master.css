@@ -65,7 +65,7 @@ header {
   background-color: white;
   transition: box-shadow 0.5s ease-in-out;
   z-index: 3;
-  padding: 10px 5%;
+  padding: 10px 0;
   align-items: center;
   /* display: flex; */
 }
@@ -74,9 +74,12 @@ header {
 }
 .container {
   width: 80%;
-  margin: 0 10%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
+}
+header .container {
+  width: 85%;
 }
 header .logo img {
   height: 50px;
@@ -88,7 +91,6 @@ header .profile img {
 }
 header .right ul {
   display: flex;
-  transform: translateY(30%);
   letter-spacing: 3px;
 }
 header .right ul li {
