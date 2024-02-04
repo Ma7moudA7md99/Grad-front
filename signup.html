@@ -48,33 +48,55 @@
         <a href="index.html"><img src="image/logo.png" alt="" /></a>
       </div>
       <form id="signupForm">
-        <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" name="firstName" required />
+        <div class="form-container">
+          <div class="firstname-div">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required />
+          </div>
 
-        <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" name="lastName" required />
+          <div class="lastname-div">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required />
+          </div>
+          <div class="email-div">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+          <div class="username-div">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required />
+          </div>
+          <div class="age-div">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required />
+          </div>
+          <div class="sex">
+            <label for="sex">Sex:</label>
+            <input type="text" id="sex" name="sex" required />
+          </div>
 
-        <label for="age">Age:</label>
-        <input type="number" id="age" name="age" required />
+          <div class="country-div">
+            <label for="country">Country:</label>
+            <select id="country" name="country" required></select>
+          </div>
+          <br />
+          <div class="password-div">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+            <div id="passwordStrength"></div>
+          </div>
 
-        <label for="country">Country:</label>
-        <select id="country" name="country" required></select>
-
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required />
-        <div id="passwordStrength"></div>
-
-        <label for="confirmPassword">Confirm Password:</label>
-        <input
-          type="password"
-          id="confirmPassword"
-          name="confirmPassword"
-          required
-        />
-
+          <div class="pass-confirm-div">
+            <label for="confirmPassword">Confirm Password:</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              required
+            />
+          </div>
+        </div>
         <button type="submit" id="submit" disabled>Submit</button>
       </form>
     </div>
