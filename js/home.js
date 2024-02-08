@@ -4,6 +4,10 @@ const body = document.getElementById("body");
 const fly_btn = document.getElementById("flying-btn");
 // Get the sign-in div
 const sign_in = document.getElementById("sign-in");
+// Get profile image icon
+const profIcon = document.getElementById("profile-icon");
+// Get profile list items
+const profItem = document.getElementById("profile-items");
 // Get the overlay div
 const overlay = document.getElementById("overlay");
 // Get the sign-in-exit icon
@@ -36,13 +40,10 @@ fly_btn.onclick = function () {
     body.classList.remove("sign-in-opened");
   }
 };
-sign_in_exit.onclick = function () {
-  sign_in.style.left = "-100%";
-  fly_btn.style.display = "block";
-  overlay.style.left = "-100%";
-  body.classList.remove("sign-in-opened");
-};
-
+// show / hide profile list
+function showProfileList() {
+  profItem.classList.toggle("item-is-active");
+}
 // enable / disable link in services card
 for (let i = 0; i < cards.length; i++) {
   setTimeout(() => {
